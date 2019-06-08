@@ -4,15 +4,15 @@
 #include <jni.h>
 #include <android/log.h>
 
-#define LOG_TAG "jniLib-jx"
+#define LOG_TAG "refft-jx"
 
 #define LOGD(...) __android_log_print(ANDROID_LOG_DEBUG, LOG_TAG, __VA_ARGS__)
 #define LOGE(...) __android_log_print(ANDROID_LOG_ERROR,LOG_TAG,__VA_ARGS__)
 #define LOGI(...) __android_log_print(ANDROID_LOG_INFO,LOG_TAG,__VA_ARGS__)
 
 
-JNIEXPORT jboolean JNICALL Java_com_example_lolita_jni_JNI_checkID
-        (JNIEnv *env, jobject obj, jstring str)
+extern "C" JNIEXPORT jboolean JNICALL
+Java_com_example_lolita_jni_ReFFTUtils_checkID(JNIEnv *env, jobject obj, jstring str)
 {
     LOGD("%s", "hello from C++");
     LOGE("%s", "hello from C++");

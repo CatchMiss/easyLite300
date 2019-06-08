@@ -1,8 +1,0 @@
-//
-// Created by Lolita on 2019/6/08/008.
-//
-
-#ifndef EASYLITE_SIGNATURECHECK_H
-#define EASYLITE_SIGNATURECHECK_H
-
-#endif //EASYLITE_SIGNATURECHECK_H

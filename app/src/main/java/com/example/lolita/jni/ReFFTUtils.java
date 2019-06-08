@@ -1,6 +1,6 @@
 package com.example.lolita.jni;
 
-public class JNI {
+public class ReFFTUtils {
     static {
         System.loadLibrary("ReFFT");
     }
